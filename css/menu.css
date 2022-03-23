@@ -1,0 +1,17 @@
+body{
+    padding: 0;
+    margin: 0;
+    display:contents;
+}
+
+.content{
+    text-align: center;
+    width: 100%;
+}
+
+.photo{
+    position: relative;
+    object-fit:cover;
+    width: 100%;
+    height: 140vw;
+}
