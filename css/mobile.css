@@ -106,26 +106,44 @@ body {
     0%{
         left:0;
     }
-    20%{
+    10%{
         left:0;
+    }
+    15%{
+        left:-100vw;
     }
     25%{
         left:-100vw;
     }
-    45%{
-        left:-100vw;
-    }
-    50%{
+    30%{
         left:-200vw;
+    }
+    40%{
+        left:-200vw;
+    }
+    45%{
+        left:-300vw;
+    }
+    55%{
+        left:-300vw;
+    }
+    60%{
+        left: -400vw;
     }
     70%{
-        left:-200vw;
+        left:-400vw;
     }
     75%{
-        left:-300vw;
+        left: -500vw;
+    }
+    85%{
+        left: -500vw;
+    }
+    90%{
+        left: -600vw;
     }
     95%{
-        left:-300vw;
+        left: -600vw;
     }
 }
 
@@ -176,7 +194,7 @@ body {
     left: 20vw;
     z-index: 101;
     mix-blend-mode:exclusion;
-    animation: bounceInUp 0.5s;
+    animation: bounceInDown 0.5s;
 }
 
 /* contact info 

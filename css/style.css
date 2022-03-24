@@ -36,7 +36,6 @@ body {
     overflow: hidden;
     filter: brightness(0.8);
     transform: translateZ(-1);
-    animation: fadeInDown 2.5s;
 }
 
 .phone{
@@ -167,7 +166,7 @@ body {
     z-index: 101;
     mix-blend-mode:exclusion;
     transform: translateZ(10);
-    animation: bounceInUp 0.5s;
+    animation: bounceInDown 0.5s;
 }
 
 @keyframes shake {
