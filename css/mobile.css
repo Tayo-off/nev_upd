@@ -102,6 +102,7 @@ body {
     object-fit: cover;
     animation: bounceInRight 0.8s;
 }
+
 @keyframes slider{
     0%{
         left:0;
