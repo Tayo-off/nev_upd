@@ -12,36 +12,87 @@
 
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="./css/animate.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/loader.css">
 
         <script>
             if (document.documentElement.clientWidth <= 850) {
                 document.location.href = "./m_index.html";
             } 
+            window.onload = function () {
+                document.body.classList.add('loaded_hiding');
+                window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+                }, 500);
+            }
         </script>
     </head>
     <body>
+        <div class="preloader">
+            <div class="preloader__row">
+              <div class="preloader__item"></div>
+              <div class="preloader__item"></div>
+            </div>
+          </div>
         <div class="video-block">
             <div class="grid"></div>
             <a href="tel:+7(4912)20-20-02"><img src="images/phone.png" alt class="phone-photo"></a>
             <img src="images/address.png" alt class="address-photo">
             <img src="images/nn2.png" alt class="afisha-logo">
             <img src="images/afisha.png" alt class="afisha-down">
-            <video class="video" width="100%" autoplay loop muted playsinline="true">
-                <source src="media/nn2.mp4" type="video/mp4">
-            </video>
+            <img src="./images/bg.jpg" alt="" width="100%" class="video">
             <a href="./menu.html" target="blank"><img src="images/menu.png" alt class="afisha-down center"></a>
         </div>
         <div class="afisha">
             <div class="slider">
                 <figure>
-                    <img src="images/port1.jpg" alt>
-                    <img src="images/port2.jpg" alt>
-                    <img src="images/port3.jpg" alt>
-                    <img src="images/port4.jpg" alt>
-                    <img src="images/port5.jpg" alt>
-                    <img src="images/port6.jpg" alt>
-                    <img src="images/port7.jpg" alt>
+                    <img src="images/slider/port1.jpg" alt>
+                    <img src="images/slider/port2.jpg" alt>
+                    <img src="images/slider/port3.jpg" alt>
+                    <img src="images/slider/port4.jpg" alt>
+                    <img src="images/slider/port5.jpg" alt>
+                    <img src="images/slider/port6.jpg" alt>
+                    <img src="images/slider/port7.jpg" alt>
+                </figure>
+            </div>
+        </div>
+        <div class="food-block">
+            <div class="food-slides">
+                <figure class="food-img-figure">
+                    <a href="#"><div class="img">
+                        <img src="images/food/food1.jpeg" alt>
+                        <div class="img-info-hover">
+                            <h1 class="name">Спагетти Карбонара</h1> <h2 class="mass">300 г</h2><h1 class="price">320 р</h3>
+                        </div>
+                    </div></a>
+                    <a href="#"><div class="img">
+                        <img src="images/food/food2.jpeg" alt>
+                        <div class="img-info-hover">
+                            <h1 class="name">Цезарь с курицей</h1><h2 class="mass">230 г</h2><h1 class="price">400 р</h3>
+                            <p class="info-product"></p>
+                        </div>
+                    </div></a>
+                    <a href="#"><div class="img">
+                        <img src="images/food/food3.jpeg" alt>
+                        <div class="img-info-hover">
+                            <h1 class="name">Ролл Филадельфия</h1> <h2 class="mass">240 г</h2><h1 class="price">420 р</h3>
+                            <p class="info-product"></p>
+                        </div>
+                    </div></a>
+                    <a href="#"><div class="img">
+                        <img src="images/food/food4.jpeg" alt>
+                        <div class="img-info-hover">
+                            <h1 class="name">Суп Том Ям с кальмаром и креветкой</h1> <h2 class="mass">220 г</h2><h1 class="price">350 р</h3>
+                            <p class="info-product"></p>
+                        </div>
+                    </div></a>
+                    <a href="#"><div class="img">
+                        <img src="images/food/food5.jpeg" alt>
+                        <div class="img-info-hover">
+                            <h1 class="name">Борщ</h1> <h2 class="mass">300 г</h2> <h1 class="price">250 р</h3>
+                            <p class="info-product"></p>
+                        </div>
+                    </div></a>
                 </figure>
             </div>
         </div>

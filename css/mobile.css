@@ -221,7 +221,106 @@ body {
     font-size: 20px;
 }*/
 
+.food-block{
+    overflow: hidden;
+    padding-bottom: -100%;
+}
 
+.food-img-figure{
+    position: relative;
+    float: left;
+    width: 1000%;
+    animation: 15s food-slider infinite;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+@keyframes food-slider{
+    0%{
+        left:0;
+    }
+    15%{
+        left:0;
+    }
+    20%{
+        left:-100vw;
+    }
+    35%{
+        left:-100vw;
+    }
+    40%{
+        left:-200vw;
+    }
+    55%{
+        left:-200vw;
+    }
+    60%{
+        left:-300vw;
+    }
+    75%{
+        left:-300vw;
+    }
+    80%{
+        left: -400vw;
+    }
+    95%{
+        left: -400vw;
+    }
+    98%{
+        left: 0;
+    }
+}
+
+.img{
+    position: relative;
+    float: left;
+    object-fit: cover;
+    overflow: hidden;
+    animation: bounceInRight 0.8s;
+}
+
+.img img{
+    object-fit: cover;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vw;
+    padding-bottom: -4vw;
+    width: 100vw;
+    height: 75vw;
+    z-index: 10;
+    transition: opacity 0.5s;
+}
+
+.img img:hover{
+    opacity: 0.4;
+}
+
+.img-info-hover{
+    padding-left: 7vw;
+    padding-right: 7vw;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+    color: #fff;
+    z-index: -1;
+}
+
+.img-info-hover h1{
+    font-weight: 700;
+}
+
+.price{
+    position: absolute;
+    top: 7em;
+    justify-content: end;
+    text-align: right;
+    color: red;
+    font-size: 4rem;
+}
 
 /*maps styles*/
 
