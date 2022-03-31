@@ -302,7 +302,7 @@ body {
     padding-top: 2vw;
     padding-bottom: 4vw;
     position: relative;
-    width: 100%;
+    width: 100vw;
     left: 0;
     top: 0;
     color: #fff;
@@ -310,10 +310,16 @@ body {
 }
 
 .img-info-hover h1{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-weight: 700;
 }
 
 .price{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     position: absolute;
     top: 7em;
     justify-content: end;

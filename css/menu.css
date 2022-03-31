@@ -14,5 +14,5 @@ body{
     object-fit:cover;
     width: 100%;
     height: 140vw;
-    animation: slideInRight 2s;
+    animation: fadeIn 1s;
 }
