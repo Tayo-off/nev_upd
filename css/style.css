@@ -28,14 +28,23 @@ body {
     background: url(./images/nn2.mp4) infinite;
     height: calc(100vw / 2 - 4px);
     width: (100vw / 2);
-    object-fit: fill;
     overflow:visible;
     box-sizing: content-box;
     position: relative;
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
     overflow: hidden;
-    filter: brightness(0.6);
+    filter: brightness(0.7);
     transform: translateZ(-1);
+}
+
+.yandex-delivery-btn{
+    background-color: yellow;
+}
+
+button{
+    background-color: rgba(17, 17, 17, 0);
+    color: rgba(255, 255, 255, 0);
+    border-color: rgba(0,0,0,0);
 }
 
 .phone{
@@ -56,7 +65,6 @@ body {
     position: absolute;
     z-index: 101;
     width:30vw;
-    top:0vw;
     left:65vw;
     z-index: 10001;
     animation: pulse 0.5s;
@@ -210,10 +218,19 @@ body {
     padding-bottom: -100%;
 }
 
-.food-img-figure{
+/* .food-img-figure{
     position: relative;
     float: left;
     width: 400%;
+    animation: 15s food-slider infinite;
+    justify-content: center;
+    overflow: hidden;
+} */
+
+.food-img-figure{
+    position: relative;
+    float: left;
+    width: 1000%;
     animation: 15s food-slider infinite;
     justify-content: center;
     overflow: hidden;
@@ -269,9 +286,8 @@ body {
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 2vw;
-    padding-bottom: -4vw;
     width: 50vw;
-    height: 35vw;
+    height: 30vw;
     z-index: 10;
     transition: opacity 0.5s;
 }
@@ -286,7 +302,7 @@ body {
     padding-top: 2vw;
     padding-bottom: 4vw;
     position: relative;
-    width: 100%;
+    width: 50vw;
     left: 0;
     top: 0;
     color: #fff;
@@ -294,6 +310,9 @@ body {
 }
 
 .img-info-hover h1{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-weight: 700;
 }
 
@@ -383,3 +402,14 @@ footer{
     text-decoration: none;
     color:#fff;
 }
+
+.delivery-modal{
+    display:none;
+    padding-left: 25vw;
+    position: absolute;
+    top: 100vw;
+    width: 100%;
+    height: 50%;
+    transition: display 1s;
+}
+

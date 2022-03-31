@@ -13,22 +13,6 @@
         <link rel="stylesheet" href="css/mobile.css">
         <link rel="stylesheet" href="./css/animate.min.css">
         <link rel="stylesheet" href="./css/loader.css">
-        
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-        <script type="text/javascript" src="slick/slick.min.js"></script>
-        <script>
-            if (document.documentElement.clientWidth > 850) {
-                document.location.href = "./index.html";
-            } 
-            window.onload = function () {
-                document.body.classList.add('loaded_hiding');
-                window.setTimeout(function () {
-                document.body.classList.add('loaded');
-                document.body.classList.remove('loaded_hiding');
-                }, 500);
-            }
-        </script>
     </head>
     <body>
         <div class="preloader">
@@ -39,8 +23,7 @@
           </div>
         <div class="video-block">
             <div class="grid"></div>
-            <a href="tel:+7(4912)20-20-02"><img src="images/phone.png" alt class="phone-photo"></a>
-            <img src="images/address.png" alt class="address-photo">
+            <a href="tel:+7(4912)20-20-02"><img src="./images/reserve.png" alt class="phone-photo"></a>
             <img src="images/nn2.png" alt class="afisha-logo">
             <img src="images/afisha.png" alt class="afisha-down">
             <img src="./images/bg.jpg" alt="" class="video">
@@ -65,34 +48,34 @@
         <div class="food-block">
             <div class="food-slides">
                 <figure class="food-img-figure">
-                    <a href="#"><div class="img">
+                    <a href="https://eda.yandex.ru/ryazan/r/gastrobar_nevinovnyx_net"><div class="img">
                         <img src="images/food/food1.jpeg" alt>
                         <div class="img-info-hover">
                             <h1 class="name">Спагетти Карбонара</h1> <h2 class="mass">300 г</h2><h1 class="price">320 р</h3>
                         </div>
                     </div></a>
-                    <a href="#"><div class="img">
+                    <a href="https://eda.yandex.ru/ryazan/r/gastrobar_nevinovnyx_net"><div class="img">
                         <img src="images/food/food2.jpeg" alt>
                         <div class="img-info-hover">
                             <h1 class="name">Цезарь с курицей</h1><h2 class="mass">230 г</h2><h1 class="price">400 р</h3>
                             <p class="info-product"></p>
                         </div>
                     </div></a>
-                    <a href="#"><div class="img">
+                    <a href="https://eda.yandex.ru/ryazan/r/gastrobar_nevinovnyx_net"><div class="img">
                         <img src="images/food/food3.jpeg" alt>
                         <div class="img-info-hover">
                             <h1 class="name">Ролл Филадельфия</h1> <h2 class="mass">240 г</h2><h1 class="price">420 р</h3>
                             <p class="info-product"></p>
                         </div>
                     </div></a>
-                    <a href="#"><div class="img">
+                    <a href="https://eda.yandex.ru/ryazan/r/gastrobar_nevinovnyx_net"><div class="img">
                         <img src="images/food/food4.jpeg" alt>
                         <div class="img-info-hover">
                             <h1 class="name">Суп Том Ям с кальмаром и креветкой</h1> <h2 class="mass">220 г</h2><h1 class="price">350 р</h3>
                             <p class="info-product"></p>
                         </div>
                     </div></a>
-                    <a href="#"><div class="img">
+                    <a href="https://eda.yandex.ru/ryazan/r/gastrobar_nevinovnyx_net"><div class="img">
                         <img src="images/food/food5.jpeg" alt>
                         <div class="img-info-hover">
                             <h1 class="name">Борщ</h1> <h2 class="mass">300 г</h2> <h1 class="price">250 р</h3>
@@ -102,8 +85,17 @@
                 </figure>
             </div>
         </div>
+
+
+        <div class="modal-delivery-block">
+            <div class="modal-content">
+                <div class="yandex-delivery"></div>
+                <div class="delivery-club"></div>
+            </div>
+        </div>
+
         <div class="maps-block">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9a89006eab2033bbf46de81bb528983da4f33a326eed3ac9c44e41d22354f264&amp;source=constructor" width="100%" height="400" frameborder="0" class="maps"></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9a89006eab2033bbf46de81bb528983da4f33a326eed3ac9c44e41d22354f264&amp;source=constructor" width="100%" height="400" frameborder="0" class="maps"></iframe>
         </div>
         <footer>
             <div class="footer-block">
@@ -118,6 +110,25 @@
                 </div>
             </div>
         </footer>
+
+        <script src="./js/animatedModal.min.js"></script>
+        <script src="./js/jquery-3.6.0.min.js"></script>
+
+        <script>
+            if (document.documentElement.clientWidth > 1200) {
+                document.location.href = "./index.html";
+            } 
+            window.onload = function () {
+                document.body.classList.add('loaded_hiding');
+                window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+                }, 500);
+            }
+
+
+            $("#delivery").animatedModal();
+        </script>
 
         
 </body></html>

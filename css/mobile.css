@@ -42,6 +42,7 @@ body {
     z-index: 101;
     width:50vw;
     top:0vw;
+    padding-top: 1em;
     left:45vw;
     z-index: 1000;
     animation: pulse 0.5s;
@@ -60,7 +61,7 @@ body {
     background: url(./images/nn2.mp4) infinite;
     height: calc(100vw - 4px);
     width: 100vw;
-    object-fit: cover;
+    object-fit: fill;
     overflow:visible;
     box-sizing: content-box;
     position: relative;
@@ -100,7 +101,7 @@ body {
     height: 100vw;
     float: left;
     object-fit: cover;
-    animation: bounceInRight 0.7s;
+    animation: bounceInRight 0.8s;
 }
 
 @keyframes slider{
@@ -230,7 +231,7 @@ body {
     position: relative;
     float: left;
     width: 1000%;
-    animation: 17s food-slider infinite;
+    animation: 15s food-slider infinite;
     justify-content: center;
     overflow: hidden;
 }
