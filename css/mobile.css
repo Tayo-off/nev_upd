@@ -100,7 +100,7 @@ body {
     height: 100vw;
     float: left;
     object-fit: cover;
-    animation: bounceInRight 0.8s;
+    animation: bounceInRight 0.7s;
 }
 
 @keyframes slider{
@@ -230,7 +230,7 @@ body {
     position: relative;
     float: left;
     width: 1000%;
-    animation: 15s food-slider infinite;
+    animation: 17s food-slider infinite;
     justify-content: center;
     overflow: hidden;
 }
