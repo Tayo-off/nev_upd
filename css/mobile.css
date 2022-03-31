@@ -60,7 +60,7 @@ body {
     background: url(./images/nn2.mp4) infinite;
     height: calc(100vw - 4px);
     width: 100vw;
-    object-fit: fill;
+    object-fit: cover;
     overflow:visible;
     box-sizing: content-box;
     position: relative;
